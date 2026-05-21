@@ -348,6 +348,27 @@ h3 {
   margin-top: 24px;
 }
 
+.map-embed {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 260px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-card-no-photo {
+  grid-template-columns: 1fr;
+}
+
 .map-placeholder {
   min-height: 220px;
   border-radius: var(--radius-md);
@@ -460,6 +481,10 @@ h3 {
   .profile-card {
     grid-template-columns: 180px 1fr;
     align-items: center;
+  }
+
+  .profile-card-no-photo {
+    grid-template-columns: 1fr;
   }
 
   .price-grid {
